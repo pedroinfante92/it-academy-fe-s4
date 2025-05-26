@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Pedro Infante">
+  <title>Joke Generator</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div id="weatherContainer">
+    <span id="temperature"></span>
+    <span id="weatherIcon"></span>
+</div>
+<div id="jokesContainer">
+    <h1 id="title">Ready to laugh?</h1>
+    <p id="jokeText"></p>
+    <form>
+        <input type="radio" id="bad" name="ratingJoke" value="0" checked>
+        <label for="bad">Bad</label>
+        <input type="radio" id="ok" name="ratingJoke" value="1">
+        <label for="ok">Ok</label>
+        <input type="radio" id="good" name="ratingJoke" value="2">
+        <label for="good">Good</label>
+        <input type="submit" value="Submit">
+      </form>
+      <div id ="output"></div>
+      <br>
+      <br>
+      <button type="button">Next Joke</button>
+</div>
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
